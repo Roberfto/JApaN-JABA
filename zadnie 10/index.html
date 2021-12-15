@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+  <h1>Faktury</h1>
+    
+    <label for="fromdate">Od daty:</label>
+    <input type="date" id="fromdate">
+    
+    <br>
+
+    <label for="todate">Do daty:</label>
+    <input type="date" id="todate">
+        
+    <br>
+
+    <button name="fetchStdData" value="Generuj" onclick="generateData();">Generuj</button>
+    <table id="Tabeladyn">
+        <tr>
+            <td>Liczba Faktru</td>
+            <td>Nr Faktury</td>
+            <td>Kupujacy</td>
+            <td>Data</td>
+            <td>Wartosc (za sztuke)</td>
+            <td>Produkty</td>    
+        </tr>
+    </table>
+</body>
+</html>
